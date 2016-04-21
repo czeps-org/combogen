@@ -1,7 +1,8 @@
 {
   "title": "Přehled kombinací drog",
   "app": "Mobilní aplikace",
-  "support": "Podpořte nás",
+  "czeps": "<span style=\"font-family: 'Exo 2'\">Česká Psychedelická Společnost</span>",
+  "support": "Podpořte původní autory tabulky",
   "drugs": {
     "lsd": "LSD",
     "mushrooms": "Psilocybinové houby",
@@ -30,9 +31,9 @@
     "ssris": "SSRI"
   },
   "interactions": {
-    "low risk & synergy": "Nízký risk a synergie",
-    "low risk & no synergy": "Nízký risk a žádná synergie",
-    "low risk & decrease": "Nízký risk a snížení",
+    "low risk & synergy": "Nízké riziko a synergie",
+    "low risk & no synergy": "Nízké riziko a žádná synergie",
+    "low risk & decrease": "Nízké riziko a snížení",
     "caution": "Pozor",
     "unsafe": "Nebezpečné",
     "dangerous": "Vysoce nebezpečné",
