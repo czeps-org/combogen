@@ -9,7 +9,7 @@ TEMPLATE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), 'templat
 TRANSLATIONS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), 'translations'))
 
 class ChartGenerator(object):
-  
+
   def __init__(self):
     self._config = Config(os.path.join(PROJECT_ROOT, 'config.json'))
     self._db = DrugDatabase(self._config)
@@ -19,8 +19,8 @@ class ChartGenerator(object):
     template = self._env.get_template('combo-chart-full.html')
 
     time_generated = datetime.now(timezone.utc)
-    status_msg = "Version {}<br>".format(self._config.version)
-    status_msg += "Generated on {} at {} UTC".format(time_generated.strftime("%d %b %Y"), time_generated.strftime("%H:%M"))
+    status_msg = "Verze {}<br>".format(self._config.version)
+    status_msg += "Vygenerováno {} {} UTC".format(time_generated.strftime("%d. %m. %Y"), time_generated.strftime("%H:%M"))
 
     return template.render(status=status_msg, lang=lang, db=self._db, cfg=self._config)
 
