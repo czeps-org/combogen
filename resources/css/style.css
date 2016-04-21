@@ -1,19 +1,20 @@
-@font-face {
-  font-family: "AgencyFBCondensed";
-  src: url("../fonts/AgencyFBBoldCondensed.ttf");
-}
-@font-face {
-  font-family: "UniversCondensedLight";
-  src: url("../fonts/Univers-CondensedLight.otf");
-}
-@font-face {
-  font-family: "UniversLight";
-  src: url("../fonts/Univers-Light.otf");
-}
-@font-face {
-  font-family: "Univers";
-  src: url("../fonts/Univers.otf");
-}
+/* @font-face { */
+/*   font-family: "AgencyFBCondensed"; */
+/*   src: url("../fonts/AgencyFBBoldCondensed.ttf"); */
+/* } */
+/* @font-face { */
+/*   font-family: "UniversCondensedLight"; */
+/*   src: url("../fonts/Univers-CondensedLight.otf"); */
+/* } */
+/* @font-face { */
+/*   font-family: "UniversLight"; */
+/*   src: url("../fonts/Univers-Light.otf"); */
+/* } */
+/* @font-face { */
+/*   font-family: "Univers"; */
+/*   src: url("../fonts/Univers.otf"); */
+/* } */
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
 
 .psychedelic {
   background-color: #274e13;
@@ -98,7 +99,7 @@ header {
   max-height: 90%;
 }
 #title {
-  font-family: 'AgencyFBCondensed', 'Open Sans', sans-serif;
+  font-family: /*'AgencyFBCondensed'*/'Exo 2', 'Open Sans', sans-serif;
   color: #FFFFFF;
   font-weight: 300;
   transform: translateY(5%);
