@@ -95,3 +95,13 @@ class Config(object):
     except KeyError:
       print("{} translation for {} not found".format(lang, interaction))
       return interaction
+
+  def translate_array(self, lang, array):
+    try:
+      result = self._translations[lang.lower()]
+      for item in array:
+        result = result[str(item).lower()]
+      return result
+    except (KeyError, TypeError):
+      print("{} translation for {} not found".format(lang, str(array)))
+      return array[-1]

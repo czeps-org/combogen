@@ -38,5 +38,14 @@
     "unsafe": "Nebezpečné",
     "dangerous": "Vysoce nebezpečné",
     "fallback": "Fallback"
+  },
+  "interaction_descriptions": {
+    "low risk & synergy": "Kombinace těchto drog působí silněji než součet účinků obou drog samotných. Je nepravděpodobné, že by způsobila nepříznivou nebo nežádoucí reakci pokud je užita s opatrností.",
+    "low risk & no synergy": "Účinky se jen sčítají. Je nepravděpodobné, že by tato kombinace vyvolala nepříznivou nebo nežádoucí reakci vyjma reakcí, které lze od jednotlivých kombinovaných drog běžně očekávat.",
+    "low risk & decrease": "Účinky jedné nebo obou drog jsou sníženy. Je nepravděpodobné, že by tato kombinace vyvolala nepříznivou nebo nežádoucí reakci vyjma reakcí, které lze od jednotlivých kombinovaných drog běžně očekávat.",
+    "caution": "Tato kombinace obvykle není fyzicky škodlivá, ale může vyvolat nežádoucí účinky, jako například fyzické nepohodlí nebo nadměrnou stimulaci. Administrace extrémního množství těchto látek může způsobit fyzické zdravotní problémy. Způsob synergie těchto látek může být nepředvídatelný; buďte opatrní, pokud se rozhodujete kombinovat tyto látky.",
+    "unsafe": "Kombinace těchto látek vyvolává značné riziko fyzické újmy. Je-li to možné, vyhněte se této kombinaci.",
+    "dangerous": "Kombinace těchto látek je považována za extrémně škodlivou a vždy je třeba se jí vyhnout. Reakce vzniklé kombinací těchto drog jsou vysoce nepředvídatelné a mohou končit smrtí jedince.",
+    "fallback": ""
   }
 }
