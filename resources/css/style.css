@@ -111,28 +111,32 @@ header {
   position: absolute;
   bottom: 15%;
   right: 0;
-  font-family: 'Open Sans', sans-serif;
   width: 35%;
 }
-#legend table {
+#legend, #legend-long {
+  font-family: 'Open Sans', sans-serif;
+}
+#legend table, #legend-long table {
   height: 90px;
-  width: 70%;
   color: black;
   font-weight: 500;
-  margin-left: auto;
   text-align: center;
   table-layout: fixed;
 }
-#legend td {
+#legend table {
+  width: 70%;
+  margin-left: auto;
+}
+#legend td, #legend-long td {
   padding: 0;
 }
-#legend .legend-icon {
+#legend .legend-icon, #legend-long .legend-icon {
   padding-top: 5px;
   color: white;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   font-size: 1.5rem;
 }
-#legend .legend-content {
+#legend .legend-content, #legend-long .legend-content {
   height: 60%;
   margin-top: auto;
   padding-top: 5px;
@@ -141,6 +145,14 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   overflow: hidden;
+}
+#legend-long .legend-content {
+  padding-left: 16px;
+  padding-right: 16px;
+  }
+#legend .legend-description, #legend-long .legend-description {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1000px;
 }
 
 

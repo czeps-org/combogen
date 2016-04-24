@@ -1,11 +1,15 @@
 import requests
 import json
 from collections import OrderedDict
+from requests.exceptions import ConnectionError
 
 class DrugDatabase(object):
 
   def __init__(self, config):
-    self._combos = requests.get(config.url).json()
+    try:
+      self._combos = requests.get(config.url).json()
+    except ConnectionError as e:
+      self._combos = {}
     self._config = config
     self._drug_groups = []
     self.load_groups()
