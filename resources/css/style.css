@@ -59,7 +59,7 @@
 
 html {
   font-size: 16px;
-  width: 3800px;
+  width: calc(1600px * 1.41421356237);
   height: 1600px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
