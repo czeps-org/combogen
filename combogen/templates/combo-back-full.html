@@ -13,27 +13,16 @@
 <body>
   <div id="container">
     <header>
-      <span id="status">{{ status }}</span>
       <img id="logo" src="resources/img/tripsit.svg" alt="logo">
-      <!-- <h1 id="title">{{ cfg.translate(lang, "title") }}</h1> -->
-      <!-- <div id="legend"> -->
-      <!--   {% include "legend-long.html" %} -->
-      <!-- </div> -->
+      <!-- CZEPS logo with text on the right side -->
     </header>
       <div id="legend-long">
         {% include "legend-long.html" %}
       </div>
-    <!-- {% include "combo-table.html" %} -->
+      <div id="drug-tree">
+        {% include "drug-tree.html" %}
+      </div>
     <footer>
-      <!-- <div class="qr"> -->
-      <!--   <img src="resources/img/logo.jpg" alt="app"> -->
-      <!--   <h3>{{ cfg.translate(lang, "czeps") }}</h3> -->
-      <!-- </div> -->
-      <!-- <div id="disclaimer">{% include "disclaimer-" + lang + ".html" %}</div> -->
-      <!-- <div class="qr"> -->
-      <!--   <img src="resources/img/support_qr.svg" alt="support"> -->
-      <!--   <h3>{{ cfg.translate(lang, "support") }}</h3> -->
-      <!-- </div> -->
     </footer>
     </div>
 </body>

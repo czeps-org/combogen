@@ -1,0 +1,40 @@
+{% macro fa_label(interaction) %}
+  <div class="legend-icon"><i class="fa {{ cfg.interaction_icon(interaction) }}"></i></div>
+  <div class="legend-content">{{ cfg.translate_interaction(lang, interaction) }}</div>
+{% endmacro %}
+{% macro fa(class, interaction) %}
+  <tr class="{{ class }}">
+      <td>{{ fa_label(interaction)}}</td>
+      <td class="legend-description">
+            {{ cfg.translate_array(lang, ['interaction_descriptions', interaction]) }}
+      </td>
+  </tr>
+{% endmacro %}
+<table>
+{% for groupName in cfg.groupNames %}
+    <!-- <div class="drug-group"> -->
+      <!-- <table> -->
+      <!-- <div class="{{ groupName }} drug-group-header"> -->
+      <thead class="{{ groupName }} drug-group-header">
+        <tr class="{{ groupName }} drug-group-header">
+          <td colspan="3">
+            {{ cfg.translate_array(lang, ["groups", groupName]) }}
+          </td>
+        </tr>
+        </div>
+      </thead>
+      <!-- </div> -->
+      <!-- <table> -->
+      <tbody>
+        {% for drug in cfg.getDrugs(groupName) %}
+          <tr class="{{ groupName }}">
+            <td>{{ drug }}</td>
+            <td>{{ cfg.translate_array(lang, ['drug_aliases', drug])}}</td>
+            <td>{{ cfg.translate_array(lang, ['drug_descriptions', drug])}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      <!-- </table> -->
+  <!-- </div> -->
+{% endfor %}
+</table>

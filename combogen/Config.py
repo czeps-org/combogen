@@ -44,6 +44,13 @@ class Config(object):
             for group in self._config['tableOrder']
             for drug in group]
 
+  @property
+  def groupNames(self):
+    return [group for group in self._config['groupNames']]
+
+  def getDrugs(self, groupName):
+    groupIndex = self._config['groupNames'].index(groupName)
+    return self._config['tableOrder'][groupIndex]
   """
   Override an interaction (e.g. Serotonin Syndrome -> Dangerous)
   """
