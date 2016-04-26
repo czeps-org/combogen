@@ -175,10 +175,7 @@ header {
 
 #chart {
   font-family: 'Open Sans', 'Univers', sans-serif;
-  height: 65%;
-  max-height: 65%;
   width: 100%;
-  max-width: 100%;
   margin: 0 auto;
   table-layout: fixed;
 }
@@ -188,8 +185,28 @@ header {
   text-align: center;
   overflow: hidden;
 }
+#chart .chart-header-horizontal > span {
+    writing-mode: vertical-lr;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
+#chart col.chart-safety {
+    width: 40px;
+}
+#chart td.chart-safety {
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    /* width: 40px; This is being set in the template file */
+    height: 40px;
+}
 .fa {
   text-shadow: 0 0 3px black;
+  font-size: 1.5rem;
 }
 
 footer {
