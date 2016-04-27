@@ -27,7 +27,7 @@
     {% for drugB in db.drugs %}
       {% set inner = loop %}
       {% if drugA == drugB %}
-        {% set class = drugA.group.name + " label" %}
+        {% set class = drugA.group.name + " label chart-intersection" %}
         {% set content = "<span>" + db.translate(lang, drugA.name) + "</span>" %}
       {% else %}
         {% set interaction = db.interaction(drugA, drugB) %}

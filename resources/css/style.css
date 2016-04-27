@@ -58,9 +58,9 @@
 }
 
 html {
-  font-size: 16px;
-  width: calc(1600px * 1.41421356237);
-  height: 1600px;
+  font-size: 24px;
+  width: 1600px;
+  height: calc(1600px * 1.41421356237);
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
@@ -74,7 +74,7 @@ body {
 #container {
   position: relative;
   background-color: #000000;
-  padding: 0.5% 2% 0 2%;
+  padding: 32px 32px 0 32px;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -119,10 +119,15 @@ header {
 }
 #legend table, #legend-long table {
   height: 90px;
-  color: black;
   font-weight: 500;
   text-align: center;
+  color: white;
+}
+#legend table {
   table-layout: fixed;
+}
+#legend-long table {
+  width: 100%;
 }
 #legend table {
   width: 70%;
@@ -133,7 +138,6 @@ header {
 }
 #legend .legend-icon, #legend-long .legend-icon {
   padding-top: 5px;
-  color: white;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   font-size: 1.5rem;
 }
@@ -142,7 +146,6 @@ header {
   margin-top: auto;
   padding-top: 5px;
   padding-bottom: 3px;
-  color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   overflow: hidden;
@@ -150,9 +153,10 @@ header {
 #legend-long .legend-content {
   padding-left: 16px;
   padding-right: 16px;
-  }
+  white-space: nowrap;
+}
 #legend .legend-description, #legend-long .legend-description {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 1000px;
 }
 
@@ -180,7 +184,7 @@ header {
   table-layout: fixed;
 }
 #chart td {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: #FFFFFF;
   text-align: center;
   overflow: hidden;
@@ -204,9 +208,11 @@ header {
     /* width: 40px; This is being set in the template file */
     height: 40px;
 }
+#chart td.chart-intersection {
+    font-size: 0.8rem;
+}
 .fa {
   text-shadow: 0 0 3px black;
-  font-size: 1.5rem;
 }
 
 footer {

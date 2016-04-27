@@ -11,26 +11,10 @@
 </head>
 <body>
   <div id="container">
-    <header>
-      <span id="status">{{ status }}</span>
-      <img id="logo" src="resources/img/tripsit.svg" alt="logo">
-      <h1 id="title">{{ cfg.translate(lang, "title") }}</h1>
-      <div id="legend">
-        {% include "legend.html" %}
-      </div>
-    </header>
-    {% include "combo-table.html" %}
-    <footer>
-      <div class="qr">
-        <img src="resources/img/logo.jpg" alt="app">
-        <h3>{{ cfg.translate(lang, "czeps") }}</h3>
-      </div>
-      <div id="disclaimer">{% include "disclaimer-" + lang + ".html" %}</div>
-      <div class="qr">
-        <img src="resources/img/support_qr.svg" alt="support">
-        <h3>{{ cfg.translate(lang, "support") }}</h3>
-      </div>
-    </footer>
+    <div id="legend-long" style="margin-bottom: 32px">
+      {% include "legend-long.html" %}
     </div>
+    {% include "combo-table.html" %}
+  </div>
 </body>
 </html>
