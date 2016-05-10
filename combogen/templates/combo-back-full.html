@@ -11,14 +11,14 @@
 </head>
 <body>
   <div id="container">
-    <header>
-      <img id="logo" src="resources/img/tripsit.svg" alt="logo">
-      <!-- CZEPS logo with text on the right side -->
-    </header>
+    <!-- <header></header> -->
       <div id="drug-tree">
         {% include "drug-tree.html" %}
       </div>
     <footer>
+      <div id="disclaimer">
+        {% include "disclaimer-" + lang + ".html" %}
+      </div>
     </footer>
     </div>
 </body>
