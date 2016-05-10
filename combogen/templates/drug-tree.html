@@ -28,9 +28,9 @@
       <tbody>
         {% for drug in cfg.getDrugs(groupName) %}
           <tr class="{{ groupName }}">
-            <td>{{ drug }}</td>
-            <td>{{ cfg.translate_array(lang, ['drug_aliases', drug])}}</td>
-            <td>{{ cfg.translate_array(lang, ['drug_descriptions', drug])}}</td>
+            <td>{{ cfg.translate_array(lang, ['drugs', drug]) }}</td>
+            <td>{{ cfg.translate_array(lang, ['drug_aliases', drug]) }}</td>
+            <td>{{ cfg.translate_array(lang, ['drug_descriptions', drug]) }}</td>
           </tr>
         {% endfor %}
       </tbody>

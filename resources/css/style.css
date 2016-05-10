@@ -188,6 +188,16 @@ header {
   color: #FFFFFF;
   text-align: center;
   overflow: hidden;
+  position: relative;
+}
+#chart td .logo {
+    position: absolute;
+}
+#chart td .logo > img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #chart .chart-header-horizontal > span {
     writing-mode: vertical-lr;

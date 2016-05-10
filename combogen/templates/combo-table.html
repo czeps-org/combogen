@@ -1,10 +1,18 @@
-{% macro horizontal_table_header() %}
+{% macro horizontal_table_header(url1, url2) %}
   <tr>
-    <td></td>
+    <td>
+      {% if url1  %}
+        <div class="logo"><img src="{{ url1 }}"></div>
+      {% endif %}
+    </td>
     {% for drug in db.drugs %}
     <td class="{{ drug.group.name }} label chart-header-horizontal"><span>{{ db.translate(lang, drug.name) }}</span></td>
     {% endfor %}
-    <td></td>
+    <td>
+      {% if url2 %}
+        <div class="logo"><img src="{{ url2 }}"></div>
+      {% endif %}
+    </td>
   </tr>
 {% endmacro %}
 
@@ -45,6 +53,6 @@
   </tr>
 {% endfor %}
 
-{{ horizontal_table_header() }}
+{{ horizontal_table_header('resources/img/tripsit.svg', 'resources/img/logo2.jpg') }}
 </tbody>
 </table>
