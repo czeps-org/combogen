@@ -5,10 +5,10 @@
   "support": "Podpořte původní autory tabulky",
   "groups": {
     "psychedelic": "Psychedelika",
-    "dissociative": "Dissociativa",
+    "dissociative": "Disociativa",
     "stimulant": "Stimulanty",
-    "depressant": "Depressanty",
-    "antidepressant": "Jiné"
+    "depressant": "Tlumivé látky",
+    "antidepressant": "Inhibitory"
   },
   "drugs": {
     "lsd": "LSD",
