@@ -26,6 +26,11 @@
       <!-- </div> -->
       <!-- <table> -->
       <tbody>
+        <tr class="{{ groupName }} drug-group-description">
+          <td colspan="3">
+            {{ cfg.translate_array(lang, ["group_descriptions", groupName]) }}
+          </td>
+        </tr>
         {% for drug in cfg.getDrugs(groupName) %}
           <tr class="{{ groupName }}">
             <td>{{ cfg.translate_array(lang, ['drugs', drug]) }}</td>

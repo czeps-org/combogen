@@ -10,6 +10,13 @@
     "depressant": "Tlumivé látky",
     "antidepressant": "Inhibitory"
   },
+  "group_descriptions": {
+    "psychedelic": "Psychedelika desc",
+    "dissociative": "Disociativa desc",
+    "stimulant": "Stimulanty desc",
+    "depressant": "Tlumivé látky desc",
+    "antidepressant": "Inhibitory desc"
+  },
   "drugs": {
     "lsd": "LSD",
     "mushrooms": "Psilocybin",
@@ -61,35 +68,35 @@
     "opioids": "Opioidy desc",
     "tramadol": "Tramadol desc",
     "benzodiazepines": "Benzodiazepiny desc",
-    "maois": "MAOI desc",
-    "ssris": "SSRI desc"
+    "maois": "Inhibitory monoaminoxidázy",
+    "ssris": "Selektivní inhibitor zpětného zachytávání serotoninu"
   },
   "drug_aliases": {
-    "lsd": "LSD aliases",
-    "mushrooms": "Psilocybin aliases",
-    "dmt": "DMT aliases",
-    "mescaline": "Mezkalin aliases",
-    "dox": "DOx aliases",
-    "nbomes": "NBOMe aliases",
+    "lsd": "Acid, kyselina, trip, papír, blotter",
+    "mushrooms": "Houbičky, klobouky, lysoně",
+    "dmt": "TODO",
+    "mescaline": "TODO",
+    "dox": "TODO",
+    "nbomes": "TODO",
     "2c-x": "2C-x aliases",
     "2c-t-x": "2C-T-x aliases",
     "5-meo-xxt": "5-MeO-xxT aliases",
-    "cannabis": "Marihuana aliases",
-    "ketamine": "Ketamin aliases",
+    "cannabis": "Konopí, ganja, tráva, hulení",
+    "ketamine": "Keťák",
     "mxe": "MXE aliases",
     "dxm": "DXM aliases",
     "nitrous": "Oxid dusný aliases",
     "amphetamines": "Amfetaminy aliases",
     "mdma": "MDMA aliases",
-    "cocaine": "Kokain aliases",
+    "cocaine": "Crack, koks, sníh, cukr",
     "caffeine": "Kofein aliases",
     "alcohol": "Alkohol aliases",
     "ghb/gbl": "GHB/GBL aliases",
     "opioids": "Opioidy aliases",
     "tramadol": "Tramadol aliases",
-    "benzodiazepines": "Benzodiazepiny aliases",
-    "maois": "MAOI aliases",
-    "ssris": "SSR aliasesI"
+    "benzodiazepines": "Benzáky",
+    "maois": "Banisteriopsis caapi, Peganum harmala",
+    "ssris": "Fevarin, Prozac, Seroxat, Zoloft, Seropram, Cipralex"
   },
   "interactions": {
     "low risk & synergy": "Nízké riziko a synergie",

@@ -225,6 +225,10 @@ header {
   text-shadow: 0 0 3px black;
 }
 
+#drug-tree table {
+    width: 100%;
+}
+
 footer {
   position: relative;
   margin: 1% auto 0;
@@ -232,7 +236,6 @@ footer {
   height: 10%;
   color: #757575;
   text-align: center;
-  font-size: 1.6rem;
   font-weight: 500;
 }
 footer .qr {
